@@ -1,48 +1,254 @@
 <!doctype html>
-<html lang="en">
+<html lang="hi">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Redirecting…</title>
-<meta name="robots" content="noindex,nofollow"/>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>XM Forex Broker | Start Trading</title>
+
 <style>
-  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;padding:24px;background:#001022;color:#e6eefb;display:flex;align-items:center;justify-content:center;height:100vh;margin:0}
-  .card{max-width:540px;background:rgba(6,8,15,0.94);padding:20px;border-radius:12px;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.6)}
-  .btn{display:inline-block;margin-top:18px;padding:10px 14px;border-radius:10px;background:#ff7a00;color:#fff;text-decoration:none;font-weight:700}
-  .small{color:#bfcfe6;margin-top:8px;font-size:13px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;
+  background:#eef3f7;
+  display:flex;
+  justify-content:center;
+  padding:20px;
+  color:#0b1220;
+}
+
+.wrap{
+  width:100%;
+  max-width:900px;
+  background:#fff;
+  border-radius:14px;
+  box-shadow:0 12px 35px rgba(0,0,0,.08);
+  padding:22px;
+  text-align:center;
+}
+
+.top{
+  background:#d6001c;
+  color:#fff;
+  padding:10px;
+  border-radius:10px;
+  font-weight:700;
+  margin-bottom:18px;
+}
+
+.logo{
+  width:110px;
+  margin:0 auto 12px;
+}
+.logo img{
+  width:100%;
+}
+
+h1{
+  font-size:22px;
+  margin-bottom:8px;
+}
+h1 span{color:#d6001c}
+
+.sub{
+  font-weight:600;
+  color:#0b6b2e;
+  margin-bottom:10px;
+}
+
+.stats{
+  font-size:14px;
+  font-weight:600;
+  color:#444;
+  margin-bottom:14px;
+}
+
+.desc{
+  font-size:14px;
+  line-height:1.6;
+  color:#333;
+  margin-bottom:18px;
+}
+
+.features{
+  text-align:left;
+  max-width:520px;
+  margin:0 auto 20px;
+  font-size:14px;
+}
+.features li{
+  margin-bottom:8px;
+}
+
+/* XM CTA */
+.cta-xm{
+  background:linear-gradient(180deg,#ff9800,#e65100);
+  color:#fff;
+  padding:14px 34px;
+  border-radius:40px;
+  font-size:18px;
+  font-weight:800;
+  text-decoration:none;
+  display:inline-block;
+  box-shadow:0 0 20px rgba(255,152,0,.45);
+  margin-bottom:6px;
+}
+
+/* Partner Code Block */
+.partner-code{
+  background:#fff3cd;
+  border:1px dashed #ff9800;
+  color:#8a5200;
+  padding:10px 14px;
+  border-radius:10px;
+  font-size:14px;
+  font-weight:700;
+  margin:6px auto 18px;
+  max-width:420px;
+}
+.partner-code span{
+  color:#d6001c;
+  font-size:16px;
+}
+
+/* Telegram CTA */
+.cta-telegram{
+  background:linear-gradient(180deg,#0b7b2b,#045d1f);
+  color:#fff;
+  padding:13px 30px;
+  border-radius:40px;
+  font-size:16px;
+  font-weight:800;
+  text-decoration:none;
+  display:inline-block;
+  margin-bottom:18px;
+}
+
+.timer{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  margin-bottom:14px;
+}
+.timer div{
+  background:#e6f5ff;
+  padding:8px 14px;
+  border-radius:20px;
+  font-weight:700;
+}
+
+.note{
+  font-size:13px;
+  color:#333;
+  margin-bottom:14px;
+}
+
+.disclaimer{
+  font-size:12px;
+  color:#777;
+  line-height:1.5;
+}
 </style>
 </head>
+
 <body>
-  <div class="card">
-    <div style="font-weight:900;font-size:18px">Preparing your link…</div>
-    <div class="small">This page logs clicks to help prevent fake/click-farm traffic. You'll be redirected shortly.</div>
-    <a id="direct" class="btn" href="#">Open Telegram</a>
-    <div class="small" style="margin-top:12px">If you are not redirected, tap the button above.</div>
+
+<div class="wrap">
+
+  <div class="top">
+    Learn Forex Trading with a Regulated Broker
   </div>
 
-<script>
-(function(){
-  const map = { telegram: "https://telegram.me/+ZVpxPGfP6LFiZDFl" };
-  function logClick(params){
-    try{
-      const url = '/.netlify/functions/logClick';
-      const payload = JSON.stringify({ts:Date.now(), params:params, ua:navigator.userAgent});
-      if(navigator.sendBeacon){
-        navigator.sendBeacon(url, payload);
-      }else{
-        fetch(url, {method:'POST',headers:{'Content-Type':'application/json'},body:payload}).catch(()=>{});
-      }
-    }catch(e){}
-  }
-  const qs = new URLSearchParams(location.search);
-  const to = qs.get('to') || 'telegram';
-  const dest = map[to] || map['telegram'];
-  const direct = document.getElementById('direct');
-  direct.setAttribute('href', dest);
+  <div class="logo">
+    <img src="xm-logo.png" alt="XM Broker">
+  </div>
 
-  logClick({to:to, ref:document.referrer});
-  setTimeout(()=>{ window.location.replace(dest); }, 1200);
-})();
+  <h1>Start Trading with <span>XM Forex Broker</span></h1>
+
+  <div class="sub">
+    Beginner Friendly • Globally Trusted • Regulated
+  </div>
+
+  <div class="stats">
+    Trusted by millions of traders worldwide
+  </div>
+
+  <div class="desc">
+    XM is a globally recognized Forex & CFD broker offering access to
+    multiple trading instruments with transparent conditions.
+  </div>
+
+  <ul class="features">
+    <li>✔ Regulated International Forex Broker</li>
+    <li>✔ Low Minimum Deposit Options</li>
+    <li>✔ MetaTrader 4 & 5 Platforms</li>
+    <li>✔ Forex, Gold, Indices & Crypto CFDs</li>
+    <li>✔ Suitable for Beginners & Learners</li>
+  </ul>
+
+  <!-- XM CTA -->
+  <a href="https://clicks.pipaffiliates.com/c?c=1049608&l=en&p=1"
+     target="_blank"
+     class="cta-xm"
+     onclick="trackXM()">
+     Start Trading with XM Broker
+  </a>
+
+  <!-- Partner Code -->
+  <div class="partner-code">
+    Use Partner Code (Must Required): <span>YF664</span>
+  </div>
+
+  <!-- Telegram CTA -->
+  <a href="javascript:void(0)"
+     class="cta-telegram"
+     onclick="joinTelegram()">
+     Join Free Trading Community
+  </a>
+
+  <div class="timer">
+    <div id="min">10 Min</div>
+    <div id="sec">00 Sec</div>
+  </div>
+
+  <div class="note">
+    Telegram app users can join instantly
+  </div>
+
+  <div class="disclaimer">
+    Risk Warning: Trading Forex & CFDs involves risk and may not be suitable
+    for all investors. Past performance is not indicative of future results.
+  </div>
+
+</div>
+
+<script>
+/* Timer */
+let t = 600;
+const min=document.getElementById("min");
+const sec=document.getElementById("sec");
+
+setInterval(()=>{
+  if(t<=0) return;
+  min.textContent=Math.floor(t/60)+" Min";
+  sec.textContent=(t%60<10?"0":"")+(t%60)+" Sec";
+  t--;
+},1000);
+
+/* Telegram Redirect */
+function joinTelegram(){
+  const tgWeb="https://t.me/+AUE-hjQP3U0wOWNl";
+  const tgApp="tg://resolve?domain=AUE-hjQP3U0wOWNl";
+  window.location.href=tgApp;
+  setTimeout(()=>{window.location.href=tgWeb},1200);
+}
+
+/* Tracking */
+function trackXM(){
+  if(typeof fbq==="function"){
+    fbq('trackCustom','XM_Account_Click');
+  }
+}
 </script>
+
 </body>
 </html>
