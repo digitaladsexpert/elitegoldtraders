@@ -3,149 +3,133 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>XM Forex Broker | Start Trading</title>
+<title>XM Forex Broker</title>
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{
   font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;
-  background:#eef3f7;
-  display:flex;
-  justify-content:center;
-  padding:20px;
-  color:#0b1220;
+  background:#f2f4f7;
+  padding:14px;
+  color:#111;
 }
 
 .wrap{
-  width:100%;
-  max-width:900px;
+  max-width:420px;
+  margin:auto;
   background:#fff;
   border-radius:14px;
-  box-shadow:0 12px 35px rgba(0,0,0,.08);
-  padding:22px;
+  padding:18px;
+  box-shadow:0 8px 25px rgba(0,0,0,.08);
   text-align:center;
 }
 
 .top{
   background:#d6001c;
   color:#fff;
-  padding:10px;
+  padding:8px;
   border-radius:10px;
   font-weight:700;
-  margin-bottom:18px;
+  font-size:14px;
+  margin-bottom:14px;
 }
 
-.logo{
-  width:110px;
-  margin:0 auto 12px;
-}
 .logo img{
-  width:100%;
+  width:90px;
+  margin-bottom:10px;
 }
 
 h1{
-  font-size:22px;
-  margin-bottom:8px;
+  font-size:18px;
+  margin-bottom:6px;
 }
 h1 span{color:#d6001c}
 
 .sub{
+  font-size:13px;
   font-weight:600;
   color:#0b6b2e;
   margin-bottom:10px;
 }
 
-.stats{
-  font-size:14px;
-  font-weight:600;
-  color:#444;
-  margin-bottom:14px;
-}
-
 .desc{
-  font-size:14px;
-  line-height:1.6;
+  font-size:13px;
   color:#333;
-  margin-bottom:18px;
+  line-height:1.5;
+  margin-bottom:14px;
 }
 
 .features{
   text-align:left;
-  max-width:520px;
-  margin:0 auto 20px;
-  font-size:14px;
+  font-size:13px;
+  margin-bottom:14px;
 }
-.features li{
-  margin-bottom:8px;
-}
+.features li{margin-bottom:6px}
 
 /* XM CTA */
 .cta-xm{
-  background:linear-gradient(180deg,#ff9800,#e65100);
+  display:block;
+  background:#ff9800;
   color:#fff;
-  padding:14px 34px;
+  padding:14px;
   border-radius:40px;
-  font-size:18px;
+  font-size:16px;
   font-weight:800;
   text-decoration:none;
-  display:inline-block;
-  box-shadow:0 0 20px rgba(255,152,0,.45);
-  margin-bottom:6px;
+  margin-bottom:8px;
 }
 
-/* Partner Code Block */
-.partner-code{
+/* Partner Code */
+.partner{
   background:#fff3cd;
   border:1px dashed #ff9800;
-  color:#8a5200;
-  padding:10px 14px;
-  border-radius:10px;
+  border-radius:12px;
+  padding:10px;
+  margin-bottom:14px;
+  font-size:13px;
+  font-weight:700;
+}
+
+.code{
+  font-size:18px;
+  color:#d6001c;
+  margin:6px 0;
+}
+
+.copy-btn{
+  width:100%;
+  background:#d6001c;
+  color:#fff;
+  border:none;
+  padding:10px;
+  border-radius:30px;
   font-size:14px;
   font-weight:700;
-  margin:6px auto 18px;
-  max-width:420px;
-}
-.partner-code span{
-  color:#d6001c;
-  font-size:16px;
 }
 
-/* Telegram CTA */
+/* Telegram */
 .cta-telegram{
-  background:linear-gradient(180deg,#0b7b2b,#045d1f);
+  display:block;
+  background:#0b7b2b;
   color:#fff;
-  padding:13px 30px;
+  padding:12px;
   border-radius:40px;
-  font-size:16px;
+  font-size:15px;
   font-weight:800;
   text-decoration:none;
-  display:inline-block;
-  margin-bottom:18px;
-}
-
-.timer{
-  display:flex;
-  justify-content:center;
-  gap:10px;
-  margin-bottom:14px;
-}
-.timer div{
-  background:#e6f5ff;
-  padding:8px 14px;
-  border-radius:20px;
-  font-weight:700;
+  margin-bottom:12px;
 }
 
 .note{
-  font-size:13px;
-  color:#333;
-  margin-bottom:14px;
+  font-size:12px;
+  color:#444;
+  margin-bottom:10px;
 }
 
 .disclaimer{
-  font-size:12px;
+  font-size:11px;
   color:#777;
-  line-height:1.5;
+  line-height:1.4;
 }
 </style>
 </head>
@@ -154,35 +138,26 @@ h1 span{color:#d6001c}
 
 <div class="wrap">
 
-  <div class="top">
-    Learn Forex Trading with a Regulated Broker
-  </div>
+  <div class="top">Learn Forex Trading with a Regulated Broker</div>
 
   <div class="logo">
     <img src="xm.jpg" alt="XM Broker">
   </div>
 
-  <h1>Start Trading with <span>XM Forex Broker</span></h1>
+  <h1>Start Trading with <span>XM</span></h1>
 
-  <div class="sub">
-    Beginner Friendly • Globally Trusted • Regulated
-  </div>
-
-  <div class="stats">
-    Trusted by millions of traders worldwide
-  </div>
+  <div class="sub">Beginner Friendly • Regulated Broker</div>
 
   <div class="desc">
-    XM is a globally recognized Forex & CFD broker offering access to
-    multiple trading instruments with transparent conditions.
+    XM is a globally recognized Forex & CFD broker offering
+    transparent trading conditions.
   </div>
 
   <ul class="features">
-    <li>✔ Regulated International Forex Broker</li>
-    <li>✔ Low Minimum Deposit Options</li>
-    <li>✔ MetaTrader 4 & 5 Platforms</li>
-    <li>✔ Forex, Gold, Indices & Crypto CFDs</li>
-    <li>✔ Suitable for Beginners & Learners</li>
+    <li>✔ Regulated Forex Broker</li>
+    <li>✔ Low Minimum Deposit</li>
+    <li>✔ MT4 & MT5 Platforms</li>
+    <li>✔ Forex, Gold & Indices</li>
   </ul>
 
   <!-- XM CTA -->
@@ -190,59 +165,40 @@ h1 span{color:#d6001c}
      target="_blank"
      class="cta-xm"
      onclick="trackXM()">
-     Start Trading with XM Broker
+     Start Trading with XM
   </a>
 
   <!-- Partner Code -->
-  <div class="partner-code">
-    Use Partner Code (Must Required): <span>YF664</span>
+  <div class="partner">
+    Use Partner Code (Required)
+    <div class="code" id="code">YF664</div>
+    <button class="copy-btn" onclick="copyCode()">Copy Partner Code</button>
   </div>
 
-  <!-- Telegram CTA -->
-  <a href="javascript:void(0)"
-     class="cta-telegram"
-     onclick="joinTelegram()">
-     Join Free Trading Community
+  <!-- Telegram -->
+  <a href="https://t.me/+AUE-hjQP3U0wOWNl"
+     target="_blank"
+     class="cta-telegram">
+     Join Free Telegram Community
   </a>
-
-  <div class="timer">
-    <div id="min">10 Min</div>
-    <div id="sec">00 Sec</div>
-  </div>
 
   <div class="note">
     Telegram app users can join instantly
   </div>
 
   <div class="disclaimer">
-    Risk Warning: Trading Forex & CFDs involves risk and may not be suitable
-    for all investors. Past performance is not indicative of future results.
+    Risk Warning: Forex & CFD trading involves risk and may not be suitable
+    for all investors.
   </div>
 
 </div>
 
 <script>
-/* Timer */
-let t = 600;
-const min=document.getElementById("min");
-const sec=document.getElementById("sec");
-
-setInterval(()=>{
-  if(t<=0) return;
-  min.textContent=Math.floor(t/60)+" Min";
-  sec.textContent=(t%60<10?"0":"")+(t%60)+" Sec";
-  t--;
-},1000);
-
-/* Telegram Redirect */
-function joinTelegram(){
-  const tgWeb="https://t.me/+AUE-hjQP3U0wOWNl";
-  const tgApp="tg://resolve?domain=AUE-hjQP3U0wOWNl";
-  window.location.href=tgApp;
-  setTimeout(()=>{window.location.href=tgWeb},1200);
+function copyCode(){
+  navigator.clipboard.writeText("YF664");
+  document.querySelector(".copy-btn").innerText="Code Copied ✓";
 }
 
-/* Tracking */
 function trackXM(){
   if(typeof fbq==="function"){
     fbq('trackCustom','XM_Account_Click');
